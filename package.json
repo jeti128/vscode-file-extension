@@ -1,0 +1,82 @@
+{
+    "name": "vscode-file-extension",
+    "displayName": "vsCode_file_extension",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.newFile",
+        "onCommand:extension.openFile",
+        "onCommand:extension.searchFile",
+        "onCommand:extension.mainmenu",
+        "onCommand:extension.newFolder"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.newFile",
+                "title": "New file"
+            },
+            {
+                "command": "extension.openFile",
+                "title": "Open file"
+            },
+            {
+                "command": "extension.searchFile",
+                "title": "Search file"
+            },
+            {
+                "command": "extension.mainmenu",
+                "title": "jtFileExtension menü"
+            },
+            {
+                "command": "extension.newFolder",
+                "title": "New folder"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.mainmenu",
+                "key": "Alt+F11",
+                "mac": "cmd+f11"
+            },
+            {
+                "command": "extension.newFile",
+                "key": "Alt+F9",
+                "mac": "cmd+f9"
+            },
+            {
+                "command": "extension.openFile",
+                "key": "Alt+F10",
+                "mac": "cmd+f10"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^7.1.1",
+        "@types/mocha": "^5.2.6",
+        "@types/node": "^10.12.21",
+        "@types/vscode": "^1.41.0",
+        "glob": "^7.1.4",
+        "mocha": "^6.1.4",
+        "typescript": "^3.3.1",
+        "tslint": "^5.12.1",
+        "vscode-test": "^1.2.0"
+    },
+    "dependencies": {
+        "fs-sync": "^1.0.6"
+    }
+}
