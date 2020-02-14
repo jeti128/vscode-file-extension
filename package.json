@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "publisher": "jeti128",
     "keywords": ["vscode", " file mannage", "newfile"],
-    "icon": "assets/icons/icon.png",
+    "icon": "https://github.com/jeti128/vscode-file-extension/blob/master/assets/icons/vscode_fileExtension.png",
     "engines": {
         "vscode": "^1.41.0"
     },
