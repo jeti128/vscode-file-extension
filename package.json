@@ -1,8 +1,11 @@
 {
     "name": "vscode-file-extension",
-    "displayName": "vsCode_file_extension",
-    "description": "",
-    "version": "0.0.1",
+    "displayName": "vsCode file extension",
+    "description": "VSCode extension for file mannage",
+    "version": "1.0.0",
+    "publisher": "jeti128",
+    "keywords": ["vscode", " file mannage", "newfile"],
+    "icon": "assets/icons/icon.png",
     "engines": {
         "vscode": "^1.41.0"
     },
@@ -18,8 +21,7 @@
     ],
     "main": "./out/extension.js",
     "contributes": {
-        "commands": [
-            {
+        "commands": [{
                 "command": "extension.newFile",
                 "title": "New file"
             },
@@ -40,8 +42,7 @@
                 "title": "New folder"
             }
         ],
-        "keybindings": [
-            {
+        "keybindings": [{
                 "command": "extension.mainmenu",
                 "key": "Alt+F11",
                 "mac": "cmd+f11"
