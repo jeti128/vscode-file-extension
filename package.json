@@ -4,7 +4,11 @@
     "description": "VSCode extension for file mannage",
     "version": "1.0.0",
     "publisher": "jeti128",
-    "keywords": ["vscode", " file mannage", "newfile"],
+    "keywords": [
+        "vscode",
+        " file mannage",
+        "newfile"
+    ],
     "icon": "https://github.com/jeti128/vscode-file-extension/blob/master/assets/icons/vscode_fileExtension.png",
     "engines": {
         "vscode": "^1.41.0"
@@ -76,6 +80,10 @@
         "typescript": "^3.3.1",
         "tslint": "^5.12.1",
         "vscode-test": "^1.2.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jeti128/vscode-file-extension.git"
     },
     "dependencies": {
         "fs-sync": "^1.0.6"
